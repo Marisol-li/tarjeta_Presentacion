@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación</title>
+    <link rel="stylesheet" href="./css/estilos.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Tarjeta de presentación</h1>
+    </header>
+    <div class="tamano">
+        <img src="fondo.jpeg" alt="Imagen de presentación" class="tarje">
+        <div id="contenido" class="texto">Escribe aquí...</div>
+        <button class="boton_e" onclick="mostrarFormulario()">Editar</button>
+        <div class="overlay" id="overlay">
+            <form id="formu" class="formu" onsubmit="guardarTexto(event)">
+                <textarea id="text" placeholder="Escribe aquí"></textarea>
+                <button type="submit" id="boton">Guardar</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/funciones.js"></script>
+</body>
+</html>
